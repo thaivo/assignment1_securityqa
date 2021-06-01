@@ -1,0 +1,344 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;900&display=swap');
+/*
+    1. Common styles and classes
+*/
+html {
+    box-sizing: border-box; /* allow width and height to include everything up until the border */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #EEF5DB;
+    font: normal 1em/1.2 'Rubik',sans-serif;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    color: #333745;
+}
+
+.hidden{
+    position:absolute;
+    left:-10000px;
+    width:1px;
+    height:1px;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    padding-left:0;
+    list-style-type: none;
+}
+
+h2, h3 {
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+h2{
+    font-size:48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+p{
+    margin:0 auto;
+}
+
+/*
+    2.Header
+*/
+#header, #footer {
+    background-color: #333745;
+}
+#header{
+    position: relative;
+}
+#header.page-container{
+    padding: 32px 36px;
+}
+.mobile{
+    display:none;
+}
+
+#hamburger_menu {
+    display:none;
+}
+
+#menu {
+    position: absolute;
+    right: 36px;
+    top: 95px;
+    margin: 0 auto;
+}
+
+#menu li {
+    text-align: center;
+    width: 100px;
+    height: 39px;
+    display: inline-block;
+    background-color: #EEF5DB;
+    padding: 0.5em 0.5em;
+    border-radius: 50px 50px;
+    font-size: 16px;
+}
+
+#mainmenu a {
+    text-decoration-line: none;
+    color: #333745;
+}
+
+#mainmenu li:nth-child(n) {
+    margin-right: 19px;
+}
+
+#mainmenu li:last-child {
+    margin-right: 0;
+}
+
+/*
+    3.Main
+*/
+#main {
+    text-align: center;
+    margin-top: 95px;
+    margin-bottom:93px;
+}
+
+#main img{
+    margin:0 auto;
+}
+
+/*
+    3.a Avatar, Title
+*/
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 150px;
+}
+h1 {
+    margin-bottom:0;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+#avatar{
+    flex:1 0 0;
+    width:250px;
+    height:200px;
+}
+#title {
+    flex: 1 0 0;
+    align-self: center;
+}
+#title > p{
+    font-size: 30px;
+    font-weight:500;
+    margin-top:0;
+}
+
+/*
+    3.b About me
+*/
+#aboutme > div {
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 26px;
+    margin-bottom: 57px;
+}
+#projects {
+    margin-top:57px;
+}
+
+#image{
+    margin-top:26px;
+}
+
+
+#languages{
+    margin-top:57px;
+}
+#languages ul{
+    margin-top:26px;
+}
+#languages li {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    margin-right:16px;
+}
+
+/*
+    3.c Contact me
+*/
+#contactme{
+    margin-top:140px;
+}
+
+#info input{
+    width:500px;
+    height:50px;
+    background-color:gainsboro;
+}
+
+#info:nth-child(2n) input{
+    margin-bottom:27px;
+}
+
+#info:nth-child(2n+1) input{
+    margin-bottom: 21px;
+}
+#fields textarea {
+    width: 500px;
+    height: 150px;
+    background-color: gainsboro;
+}
+
+#fields{
+    margin-bottom:15px;
+}
+
+button {
+    height: 40px;
+    width: 90px;
+    background-color: #333745;
+    color: #EEF5DB;
+    font-size:24px;
+}
+
+/*
+    4. Footer
+*/
+#footer{
+    padding-top:36px;
+    padding-bottom:20px;
+}
+#footer p {
+    color: #EEF5DB;
+    text-align:center;
+    margin:0 auto;
+    font-size:30px;
+}
+
+/*
+    For Mobile
+*/
+@media screen and (max-width:320px) {
+    /*
+        common classes
+    */
+    .page-container {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop_tablet {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    /*
+        2.Header
+    */
+    #hamburger_menu {
+        display: block;
+        position: absolute;
+        right: 36px;
+        top: 88px;
+    }
+
+    #hamburger_menu span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #EEF5DB;
+        border-radius: 3px;
+    }
+
+    #menu{
+        display:none;
+    }
+    /*
+    3.Main
+    */
+    #main {
+        margin-top: 87px;
+        margin-bottom: 73px;
+    }
+    /*
+    3.a Avatar, Title
+    */
+    #avatar {
+        flex: 0 100%;
+    }
+
+    #title {
+        flex: 0 100%;
+    }
+    #title > p {
+        font-size: 24px;
+    }
+    
+
+    /*
+    3.b About me
+    */
+    #aboutme > div {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #languages li {
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        margin-right: 0;
+        margin-bottom:17px;
+    }
+
+    /*
+    3.c Contact me
+    */
+    #info input {
+        width: 280px;
+    }
+    #fields textarea {
+        width: 280px;
+    }
+    button{
+        font-size:22px;
+    }
+
+    /*
+    4. Footer
+    */
+    #footer p {
+       font-size: 20px;
+    }
+}
