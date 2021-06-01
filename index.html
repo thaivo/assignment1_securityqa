@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="utf-8" />
@@ -120,7 +119,7 @@
                 <h2>
                     Contact me
                 </h2>
-                <form action="#" method="GET">
+                <form action="#" method="POST">
                     <div id="fields">
                         <div id="info">
                             <label class="hidden" for="name">name</label>
@@ -132,16 +131,13 @@
                             <input id="email" type="email" name="email" placeholder="Email" required/>
                         </div>
                         <div>
-                            <label class="hidden" for="details" required>details</label>
-                            <textarea id="details">
+                            <label class="hidden" for="details">details</label>
+                            <textarea id="details" name="details" required>
                         </textarea>
                         </div>
                     </div>
-
                     <input type="submit" value="submit"/>
-
                 </form>
-
             </section>
         </main>
         <footer id="footer" class="page-container">
