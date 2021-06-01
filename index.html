@@ -13,8 +13,10 @@
                 header heading
             </h2>
             <div>
-                <img alt="the logo of my portfolio" src="img/TV_Logo_desktop_tablet.png" class="desktop_tablet" />
-                <img alt="the logo of my portfolio" src="img/logo-mobile.jpg" class="mobile" />
+                <a href="index.html">
+                    <img alt="the logo of my portfolio" src="img/TV_Logo_desktop_tablet.png" class="desktop_tablet" />
+                    <img alt="the logo of my portfolio" src="img/logo-mobile.jpg" class="mobile" />
+                </a>
             </div>
             <nav id="mainmenu">
                 <h3 class="hidden">menu heading</h3>
@@ -29,7 +31,7 @@
 
                 <ul id="menu">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
                         <a href="#">Project</a>
@@ -79,12 +81,16 @@
                         Projects
                     </h3>
                     <div id="image">
-                        <img alt="OpenClovis project" src="img/OpenClovis_logo.jpg" class="desktop_tablet" />
-                        <img alt="OpenClovis project" src="img/OpenClovis_logo_mobile.jpg" class="mobile" />
+                        <a href="http://openclovis.com/">
+                            <img alt="OpenClovis project" src="img/OpenClovis_logo.jpg" class="desktop_tablet" />
+                            <img alt="OpenClovis project" src="img/OpenClovis_logo_mobile.jpg" class="mobile" />
+                        </a>
                     </div>
                     <div id="image">
-                        <img alt="VitalQIP project" src="img/vitalQIP.jpg" class="desktop_tablet" />
-                        <img alt="VitalQIP project" src="img/vitalQIP_mobile.png" class="mobile" />
+                        <a href="https://www.nokia.com/networks/products/vitalqip-ip-address-management/">
+                            <img alt="VitalQIP project" src="img/vitalQIP.jpg" class="desktop_tablet" />
+                            <img alt="VitalQIP project" src="img/vitalQIP_mobile.png" class="mobile" />
+                        </a>
                     </div>
                 </section>
                 <section id="languages">
@@ -118,23 +124,22 @@
                     <div id="fields">
                         <div id="info">
                             <label class="hidden" for="name">name</label>
-                            <input id="name" placeholder="Name" type="text" name="name" />
+                            <input id="name" placeholder="Name" type="text" name="name" required/>
                         </div>
 
                         <div id="info">
                             <label class="hidden" for="email">email</label>
-                            <input id="email" type="email" name="email" placeholder="Email" />
+                            <input id="email" type="email" name="email" placeholder="Email" required/>
                         </div>
                         <div>
-                            <label class="hidden" for="details">details</label>
+                            <label class="hidden" for="details" required>details</label>
                             <textarea id="details">
                         </textarea>
                         </div>
                     </div>
 
-                    <button type="submit">
-                        Send
-                    </button>
+                    <input type="submit" value="submit"/>
+
                 </form>
 
             </section>
